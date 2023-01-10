@@ -1,0 +1,192 @@
+.container {
+  position: relative;
+  padding-top: 15rem;
+  padding-bottom: 7.5rem;
+  z-index: 10;
+}
+
+.glide {
+  background-image: url('https://res.cloudinary.com/tommello/image/upload/v1668524494/Projeto%20Red%20Bull%20Racing/driver-carousel-bg_gehmcl_mkmwhp.avif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: 50%;
+}
+
+.title {
+  color: #fff;
+  font-family: 'Bull-Bold', 'BullText-Medium';
+  font-size: 2rem;
+  justify-content: center;
+  line-height: 2.25rem;
+  padding: 1.875rem;
+  text-align: center;
+  text-shadow: 0 0 1.25rem rgba(0, 15, 30, .2);
+  user-select: none;
+}
+
+.drivers {
+  position: relative;
+  cursor: grab;
+}
+
+ul.slides {
+  display: grid;
+  grid-template-areas: 'slide';
+  transform: none !important;
+  width: auto !important;
+}
+
+.slide {
+  opacity: 0;
+  grid-area: slide;
+  position: relative;
+  transition: opacity 1s ease;
+}
+
+.slideWrapper {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  max-width: 81.25rem;
+  padding: 0 0 8.125rem;
+  min-height: 31.25rem;
+}
+
+.driverImg {
+  flex: 0 0 40%;
+}
+
+.img {
+  animation-delay: 0.5s;
+  margin: 0 auto;
+  max-width: 100%;
+  pointer-events: none;
+}
+
+.driverName {
+  flex: 1 1;
+  margin-left: 5.3125rem;
+}
+
+.driverNameContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.nameRow {
+  display: flex;
+  flex-flow: row;
+}
+
+.surnameRow {
+  display: flex;
+  justify-content: center;
+  margin-top: -0.625rem;
+}
+
+.name {
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+}
+
+.name > h1 {
+  color: #FFF !important;
+  font-family: 'Bull-Heavy', 'BullText-Bold', 'Bull-Bold' !important;
+  font-size: 5.625rem !important;
+  letter-spacing: 0 !important;
+  line-height: 5.625rem !important;
+  text-transform: uppercase !important;
+  animation-delay: 1s;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  pointer-events: none;
+}
+
+.number>img {
+  animation-delay: 1.255s;
+  max-width: unset;
+  min-height: 6rem;
+}
+
+.surnameRow > h1 {
+  color: #fff;
+  font-family: 'Bull-Heavy', 'BullText-Bold', 'Bull-Bold';
+  font-size: 5.625rem !important;
+  letter-spacing: 0 !important;
+  line-height: 5.625rem !important;
+  text-transform: uppercase !important;
+  text-shadow: unset !important;
+  animation-delay: 1.5s;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-text-stroke-width: 0.0625rem;
+  -webkit-text-stroke-color: #fff;
+}
+
+.profileButton {
+  position: absolute;
+  left: 50%;
+  bottom: 3.4375rem;
+  transform: translateX(-50%);
+}
+
+.button {
+  margin: 1.875rem auto;
+  background-color: transparent;
+  border-color: #FFFFFF4D;
+  border-width: 0.125rem;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+.button>span {
+  color: var(--rbr-text);
+  padding: 0 0.25rem;
+}
+
+.bullets {
+  position: absolute;
+  display: inline-flex;
+  left: 50%;
+  bottom: 2.5rem;
+  transform: translateX(-50%);
+  list-style: none;
+  z-index: 10;
+  user-select: none;
+}
+
+.bullets > button {
+  background: #F5003F;
+  background-color: #F5003F;
+  border: none;
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+  opacity: 0.5;
+  margin: 0 0.3rem;
+}
+
+.controls {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  margin: 0 1.25rem;
+  transform: translateY(-50%);
+  width: calc(100% - 2.5rem);
+  z-index: 100;
+}
+
+.controls>button {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
