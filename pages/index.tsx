@@ -5,6 +5,7 @@ import Carousel from '../components/Home/Carousel'
 import HighlightedNews from '../components/Home/HighlightedNews/HighlightedNews'
 import EditorsPick from '../components/Home/EditorsPick/EditorsPick'
 import Newsletter from '../components/Home/Newsletter/Newsletter'
+import Drivers from '../components/Home/Drivers/Drivers'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <HighlightedNews />
         <EditorsPick />
         <Newsletter />
+        <Drivers />
       </main>
     </>
   )
