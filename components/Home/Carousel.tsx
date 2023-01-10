@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import { Carousel } from 'antd'
 import style from '../../styles/Home.module.css'
 
