@@ -138,6 +138,7 @@
   max-width: 100%;
   width: 7.0406rem;
   cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.35, 0, 0, 1);
 }
 
 .buttonItem:hover {
