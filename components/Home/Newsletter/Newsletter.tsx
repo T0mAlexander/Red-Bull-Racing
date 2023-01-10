@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import Checkbox from './Checkbox/Checkbox'
 import style from './Newsletter.module.css'
 
@@ -7,7 +9,7 @@ const Newsletter = () => {
     <div className={style.wrapper}>
       <div className={style.container}>
         <img src="https://res.cloudinary.com/tommello/image/upload/v1668524528/Projeto%20Red%20Bull%20Racing/red-bull-car_ls5rkr_ecai3m.jpg"
-          className={style.background} />
+        className={style.background} />
       </div>
       <div className={style.newsletterSignup}>
         <div className={style.newsletterSignupContent}>
