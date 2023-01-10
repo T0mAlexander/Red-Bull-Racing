@@ -79,6 +79,7 @@
   height: 3rem;
   padding: 0 1.5rem;
   cursor: pointer;
+  transition: all 0.25s ease-in;
 }
 
 .button:hover {
