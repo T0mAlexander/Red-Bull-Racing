@@ -1,0 +1,115 @@
+.wrapper {
+  overflow: hidden;
+  padding-bottom: 3.75rem;
+  margin-top: 3.75rem;
+  user-select: none;
+}
+
+.carSlider {
+  background-size: contain;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.container {
+  overflow: visible;
+  min-height: 43.75rem;
+}
+
+.layout {
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.layoutContainer {
+  position: relative;
+  overflow: visible;
+  min-height: 43.75rem;
+  width: 100%;
+}
+
+.layoutBackground {
+  background-image: url('https://res.cloudinary.com/tommello/image/upload/v1668524491/Projeto%20Red%20Bull%20Racing/cars-bg_rfhexw_sogom2.png');
+  background-size: auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: calc(100% + 1.25rem);
+  left: 0;
+  margin: 0 auto;
+  max-width: 90rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.carStats {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  left: 22%;
+  top: calc(10% + 3.4375rem)
+}
+
+.statItem, .dashedDivider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3125rem;
+}
+
+.itemWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemContainer {
+  display: flex;
+}
+
+.itemIcon {
+  margin-bottom: 0.3125rem;
+}
+
+.itemTitle {
+  text-transform: uppercase;
+  text-align: left;
+  min-width: 5.625rem;
+  padding-left: 0.625rem;
+}
+
+.itemValue {
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+
+.carModel {
+  position: absolute;
+  text-align: left;
+  top: 10%;
+  right: 30%;
+  text-shadow: 0 0 1.25rem #000F1E33;
+}
+
+.carName, .carNumber {
+  font-family: 'Bull-Heavy', 'BullText-Bold' !important;
+  font-size: 5.625rem !important;
+  letter-spacing: 0 !important;
+  line-height: 5.625rem !important;
+  text-transform: uppercase !important;
+}
+
+.carName {
+  -webkit-text-fill-color: transparent !important;
+  -webkit-text-stroke-width: 0.0625rem;
+  -webkit-text-stroke-color: #FFF;
+  text-shadow: unset !important;
+}
+
+.carNumber {
+  color: #FFF !important;
+}
