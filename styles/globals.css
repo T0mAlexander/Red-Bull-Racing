@@ -147,3 +147,18 @@ div button.glide__bullet--active {
   animation-duration: 1s;
   animation-fill-mode: both;
 }
+
+.tagBold {
+  color: #FFF;
+  min-width: 1.5rem;
+  font-family: 'BullText-Bold', 'BullText-Regular', 'Bull-Heavy';
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  line-height: 1.125rem;
+  opacity: 0.7;
+}
+
+.titleBold {
+  font-family: 'Bull-Bold', 'Bull-Heavy';
+  line-height: 1.25rem;
+}
