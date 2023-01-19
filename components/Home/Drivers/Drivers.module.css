@@ -1,7 +1,7 @@
 .container {
   position: relative;
-  padding-top: 15rem;
-  padding-bottom: 7.5rem;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
   z-index: 10;
 }
 
@@ -27,7 +27,6 @@
 
 .drivers {
   position: relative;
-  cursor: grab;
 }
 
 ul.slides {
@@ -51,6 +50,7 @@ ul.slides {
   max-width: 81.25rem;
   padding: 0 0 8.125rem;
   min-height: 31.25rem;
+  cursor: grab;
 }
 
 .driverImg {
