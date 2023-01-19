@@ -6,6 +6,7 @@ import HighlightedNews from '../components/Home/HighlightedNews/HighlightedNews'
 import EditorsPick from '../components/Home/EditorsPick/EditorsPick'
 import Newsletter from '../components/Home/Newsletter/Newsletter'
 import Drivers from '../components/Home/Drivers/Drivers'
+import Cars from '../components/Home/Cars/Cars'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <EditorsPick />
         <Newsletter />
         <Drivers />
+        <Cars />
       </main>
     </>
   )
