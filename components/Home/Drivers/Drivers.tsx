@@ -26,7 +26,7 @@ const Drivers = () => {
     let number2 = document.querySelector('#driverNumber2')
     let surname2 = document.querySelector('#driverSurname2')
 
-    Slider.on(['build.before', 'move.after'], () => {
+    Slider.on(['build.before', 'move.after', 'swipe.start'], () => {
       if (slide?.classList.contains('glide__slide--active')) {
         img?.classList.add('fadeInLeft', 'animation')
         img2?.classList.remove('fadeInLeft', 'animation')
