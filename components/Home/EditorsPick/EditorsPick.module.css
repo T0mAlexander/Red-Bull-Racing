@@ -1,20 +1,30 @@
 .wrapper {
   height: 43.25rem;
-  width: 92rem;
-  margin-left: calc(-46rem + 50%);
-  margin-top: 0.75rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 1000px) {
+  .wrapper {
+    margin-left: 4rem;
+    width: calc(99.99% - 8rem);
+  }
+}
+
+@media (min-width: 1600px) {
+  .wrapper {
+    margin-left: calc(-46rem + 50%);
+    width: 92rem;
+  }
 }
 
 .container {
   position: relative;
-  display: block;
-  box-shadow: 0 0.5rem 0.75rem 0 #000F1E0A, 0 0.125rem 0.25rem 0 #000F1E05;
   overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 0.75rem 0 #000F1E0A,0 0.125rem 0.25rem 0 #000F1E05;
+  display: block;
   height: 100%;
   width: 100%;
-  border-radius: 0.5rem;
-  transform: translateZ(0);
   z-index: 5;
 }
 

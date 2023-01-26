@@ -1,0 +1,19 @@
+.notFilled {
+  background: transparent;
+  border: 0.0625rem solid #FFFFFFA6;
+}
+
+.filled {
+  background: #DB0A40;
+  border: 0.0625rem solid #DB0A40;
+}
+
+.checkIconDefault {
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.checkIconVisible {
+  opacity: 1;
+  transition: all 0.2s;
+}

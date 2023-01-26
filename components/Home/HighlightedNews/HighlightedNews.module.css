@@ -4,11 +4,24 @@
   display: flex;
   flex-direction: column;
   height: 721px;
-  width: 92rem;
   justify-content: flex-end;
-  margin-left: calc(-46rem + 50%);
   z-index: 4;
   user-select: none;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 1000px) {
+  .content {
+    margin-left: 4rem;
+    width: calc(99.99% - 8rem);
+  }
+}
+
+@media (min-width: 1600px) {
+  .content {
+    margin-left: calc(-46rem + 50%);
+    width: 92rem;
+  }
 }
 
 .item {

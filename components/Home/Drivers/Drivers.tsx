@@ -9,7 +9,7 @@ import { useEffect } from 'react'
 const Drivers = () => {
   useEffect(() => {
     const Slider = new Glide('.glide', {
-      type: 'slider',
+      type: 'carousel',
       startAt: 0,
       perView: 1
     })
@@ -57,7 +57,7 @@ const Drivers = () => {
     })
 
     Slider.mount()
-  }, [])
+  })
 
   return (
     <div className='glide'>
