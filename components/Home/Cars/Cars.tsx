@@ -9,13 +9,13 @@ import CarSlide from './CarSlide/CarSlide';
 
 const Cars = () => {
   useEffect(() => {
-    const Slider = new Glide('.glide', {
+    const carsSlider = new Glide('.glide', {
       type: 'slider',
       startAt: 0,
       perView: 1
     })
 
-    Slider.mount()
+    carsSlider.mount()
   })
 
   return (
@@ -79,6 +79,14 @@ const Cars = () => {
                   
                 </div>
               </div>
+            <div data-glide-el='controls'>
+              <button className={style.prevSlideButton} data-glide-dir='<'>
+                <img src="https://res.cloudinary.com/tommello/image/upload/v1668524500/Projeto%20Red%20Bull%20Racing/icon-arrow-left_d2fuuh_eqlxpe.svg" />
+              </button>
+              <button className={style.nextSlideButton} data-glide-dir='>'>
+                <img src="https://res.cloudinary.com/tommello/image/upload/v1668524500/Projeto%20Red%20Bull%20Racing/icon-arrow-right_cdo5go_wezxj7.svg" />
+              </button>
+            </div>
             </div>
           </div>
         </div>
