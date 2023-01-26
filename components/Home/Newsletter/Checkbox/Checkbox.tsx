@@ -1,6 +1,6 @@
 import { Check } from "phosphor-react"
 import { useState } from "react"
-import style from './Checkbox.module.css'
+import style from '../Newsletter.module.css'
 
 const Checkbox = () => {
   const [check, setCheck] = useState(false)

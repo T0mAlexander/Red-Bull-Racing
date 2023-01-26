@@ -1,26 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import style from './Cars.module.css'
-import Glide from '@glidejs/glide'
-import '@glidejs/glide/dist/css/glide.core.min.css'
-import '@glidejs/glide/dist/css/glide.theme.min.css'
-import { useEffect } from 'react'
-import CarSlide from './CarSlide/CarSlide';
 
 const Cars = () => {
-  useEffect(() => {
-    const Slider = new Glide('.glide', {
-      type: 'slider',
-      startAt: 0,
-      perView: 1
-    })
-
-    Slider.mount()
-  })
-
   return (
     <div className={style.wrapper}>
-      <div className={style.Slider}>
+      <div className={style.carSlider}>
         <div className={style.container}>
           <div className={style.layout}>
             <div className={style.layoutContainer}>
@@ -73,11 +58,6 @@ const Cars = () => {
                   <span className={style.carName}>RB</span>
                   <span className={style.carNumber}>18</span>
                 </h1>
-              </div>
-              <div className={style.carsSliderContent}>
-                <div className={style.carsSlider}>
-                  
-                </div>
               </div>
             </div>
           </div>
