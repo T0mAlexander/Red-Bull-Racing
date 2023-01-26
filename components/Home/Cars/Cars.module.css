@@ -5,7 +5,7 @@
   user-select: none;
 }
 
-.carSlider {
+.Slider {
   background-size: contain;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -112,4 +112,60 @@
 
 .carNumber {
   color: #FFF !important;
+}
+
+.carsSliderContent {
+  position: relative;
+  top: -3.125rem;
+  height: 100%;
+  right: auto;
+  width: 100%;
+}
+
+.carsSlider {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.prevSlideButton, .nextSlideButton {
+  height: 3.375rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-4.375rem);
+  width: 2rem;
+  z-index: 100;
+}
+
+.nextSlideButton {
+  right: 1.875rem;
+}
+
+.prevSlideButton {
+  left: 1.875rem;
+}
+
+.glideSlide {
+  height: 100%;
+}
+
+.glideContainer {
+  max-width: 100%;
+}
+
+.glideContent {
+  min-height: 45rem;
+}
+
+.theCar {
+  position: absolute;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate(-0.625rem, -0.125rem);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
 }
