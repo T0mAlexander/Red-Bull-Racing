@@ -4,22 +4,24 @@ import style from './Cars.module.css'
 import Glide from '@glidejs/glide'
 import '@glidejs/glide/dist/css/glide.core.min.css'
 import '@glidejs/glide/dist/css/glide.theme.min.css'
+import CarSlide from './CarSlide/CarSlide'
 import { useEffect } from 'react'
-import CarSlide from './CarSlide/CarSlide';
 
 const Cars = () => {
   useEffect(() => {
-    const carsSlider = new Glide('.glide', {
+    const carsCarousel = new Glide('.cars', {
       type: 'slider',
       startAt: 0,
-      perView: 1
+      perView: 1,
+      swipeThreshold: false,
+      dragThreshold: false
     })
 
-    carsSlider.mount()
+    carsCarousel.mount()
   })
 
   return (
-    <div className={style.wrapper}>
+    <div className={`cars ${style.wrapper}`}>
       <div className={style.Slider}>
         <div className={style.container}>
           <div className={style.layout}>
@@ -76,17 +78,23 @@ const Cars = () => {
               </div>
               <div className={style.carsSliderContent}>
                 <div className={style.carsSlider}>
-                  
+
+                  <div className='cars__track' data-glide-el='track'>
+                    <div className='cars__slides'>
+                      <CarSlide carName='RB18' imageSource='https://res.cloudinary.com/tommello/image/upload/v1668524527/Projeto%20Red%20Bull%20Racing/rb18_tbkdec_byjdng.avif' />
+                    </div>
+                  </div>
+
                 </div>
               </div>
-            <div data-glide-el='controls'>
-              <button className={style.prevSlideButton} data-glide-dir='<'>
-                <img src="https://res.cloudinary.com/tommello/image/upload/v1668524500/Projeto%20Red%20Bull%20Racing/icon-arrow-left_d2fuuh_eqlxpe.svg" />
-              </button>
-              <button className={style.nextSlideButton} data-glide-dir='>'>
-                <img src="https://res.cloudinary.com/tommello/image/upload/v1668524500/Projeto%20Red%20Bull%20Racing/icon-arrow-right_cdo5go_wezxj7.svg" />
-              </button>
-            </div>
+              <div data-glide-el='controls'>
+                <button className={style.prevSlideButton} data-glide-dir='<'>
+                  <img src="https://res.cloudinary.com/tommello/image/upload/v1668524500/Projeto%20Red%20Bull%20Racing/icon-arrow-left_d2fuuh_eqlxpe.svg" />
+                </button>
+                <button className={style.nextSlideButton} data-glide-dir='>'>
+                  <img src="https://res.cloudinary.com/tommello/image/upload/v1668524500/Projeto%20Red%20Bull%20Racing/icon-arrow-right_cdo5go_wezxj7.svg" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
