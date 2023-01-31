@@ -103,11 +103,11 @@ ul.glide__slides li.glide__slide--active {
   z-index: 1;
 }
 
-ul.rbr-car__slides li.is-hidden {
+.car.is-hidden {
   opacity: 0;
 }
 
-ul.rbr-car__slides li.not-hidden {
+.car.glide__slide--active {
   opacity: 1;
 }
 
