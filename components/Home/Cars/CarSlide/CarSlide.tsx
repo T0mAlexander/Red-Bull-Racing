@@ -9,14 +9,14 @@ interface CarModel {
 
 const CarSlide = ({ imageSource }: CarModel) => {
   return (
-    <li className={`rbr-car__slide is-hidden ${style.Slide}`} >
+    <div className={`car__slide ${style.Slide}`}>
       <div className={style.Container}>
         <div className={style.carContent}>
-          <div className={style.carModel} style={{ backgroundImage: `url(${imageSource})`}} >
+          <div className={style.carModel} style={{ backgroundImage: `url(${imageSource})`, opacity: 1}} >
           </div>
         </div>
       </div>
-    </li>
+    </div>
   )
 }
 
