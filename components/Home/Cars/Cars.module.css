@@ -50,7 +50,7 @@
   position: absolute;
   flex-direction: row;
   left: 22%;
-  top: calc(10% + 3.4375rem)
+  top: calc(10% + 3.4375rem);
 }
 
 .statItem, .dashedDivider {
@@ -127,6 +127,7 @@
   top: 0;
   height: 100%;
   width: 100%;
+  cursor: default;
 }
 
 .prevSlideButton, .nextSlideButton {
