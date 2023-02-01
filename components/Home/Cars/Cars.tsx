@@ -6,6 +6,7 @@ import '@glidejs/glide/dist/css/glide.core.min.css'
 import '@glidejs/glide/dist/css/glide.theme.min.css'
 import CarSlide from './CarSlide/CarSlide'
 import { useEffect } from 'react'
+import dynamic from 'next/dynamic'
 
 const Cars = () => {
   useEffect(() => {
@@ -20,6 +21,10 @@ const Cars = () => {
     carsCarousel.mount()
   })
 
+  const RB15 = dynamic(() => import('./3D/RB15/RB15'), {ssr: false})
+  const RB16B = dynamic(() => import('./3D/RB16B/RB16B'), {ssr: false})
+  const RB18 = dynamic(() => import('./3D/RB18/RB18'), {ssr: false})
+  
   return (
     <div className={`cars ${style.wrapper}`}>
       <div className={style.Slider}>
@@ -81,17 +86,19 @@ const Cars = () => {
 
                   <div className='cars__track' data-glide-el='track'>
                     <div className='cars__slides'>
-                      <CarSlide carName='RB18' imageSource='https://res.cloudinary.com/tommello/image/upload/v1668524527/Projeto%20Red%20Bull%20Racing/rb18_tbkdec_byjdng.avif' />
+                      {/* <CarSlide carName='RB18' imageSource='https://res.cloudinary.com/tommello/image/upload/v1668524527/Projeto%20Red%20Bull%20Racing/rb18_tbkdec_byjdng.avif' /> */}
+                      <RB18 />
+                      <RB16B />
+                      <RB15 />
                     </div>
                   </div>
-
                 </div>
               </div>
               <div data-glide-el='controls'>
-                <button className={style.prevSlideButton} data-glide-dir='<'>
+                <button className={style.prevSlideButton} data-glide-dir='<' title='Previous Car'>
                   <img src="https://res.cloudinary.com/tommello/image/upload/v1668524500/Projeto%20Red%20Bull%20Racing/icon-arrow-left_d2fuuh_eqlxpe.svg" />
                 </button>
-                <button className={style.nextSlideButton} data-glide-dir='>'>
+                <button className={style.nextSlideButton} data-glide-dir='>' title='Next Car'>
                   <img src="https://res.cloudinary.com/tommello/image/upload/v1668524500/Projeto%20Red%20Bull%20Racing/icon-arrow-right_cdo5go_wezxj7.svg" />
                 </button>
               </div>
