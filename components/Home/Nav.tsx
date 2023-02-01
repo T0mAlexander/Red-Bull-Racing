@@ -1,4 +1,4 @@
-import Image from 'next/image'
+/* eslint-disable @next/next/no-img-element */
 import { List } from 'phosphor-react'
 import style from '../../styles/Home.module.css'
 
@@ -6,12 +6,9 @@ const Nav = () => {
   return (
     <div className={style.nav}>
       <a href="" className={style.logo}>
-        <Image
-          priority
+        <img
           src='https://res.cloudinary.com/tommello/image/upload/v1672638070/Projeto%20Red%20Bull%20Racing/oracle-red-bull-racing-logo_mcmgst.png'
-          alt='Red Bull Racing Logo'
-          width={76.15}
-          height={36} />
+          alt='Red Bull Racing Logo' />
       </a>
       <div className={style.menu}>
         <nav className={style.links}>
