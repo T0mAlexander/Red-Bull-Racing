@@ -1,0 +1,177 @@
+.wrapper {
+  height: 43.25rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 1000px) {
+  .wrapper {
+    margin-left: 4rem;
+    width: calc(99.99% - 8rem);
+  }
+}
+
+@media (min-width: 1600px) {
+  .wrapper {
+    margin-left: calc(-46rem + 50%);
+    width: 92rem;
+  }
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 0.75rem 0 #000F1E0A,0 0.125rem 0.25rem 0 #000F1E05;
+  display: block;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+}
+
+.media, .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.media {
+  transition: transform 0.6s cubic-bezier(0.35, 0, 0, 1);
+}
+
+.container:hover .media {
+  transform: scale(1.05);
+  transition: transform 0.8s cubic-bezier(0.35, 0, 0, 1);
+}
+
+.title {
+  width: 54%;
+  padding: 3.25rem 2.75rem;
+}
+
+.media::after {
+  position: absolute;
+  background: linear-gradient(238.37deg, #000F1E00 26.01%, #000F1E02 31.2%, #000F1E09 36.4%,
+      #000F1E15 41.59%, #000F1E25 46.79%, #000F1E3B 51.98%, #000F1E55 57.18%,
+      #000F1E71 62.37%, #000F1E8E 67.57%, #000F1EAA 72.77%, #000F1EC4 77.96%,
+      #000F1EDA 83.16%, #000F1EEA 88.35%, #000F1EF6 93.55%, #000F1EFD 98.74%, #000F1E 103.94%);
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.previewMedia {
+  position: relative;
+  flex-grow: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.featuredImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.imgView {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.imgContainer {
+  position: relative;
+  height: calc(100% + 0.875rem);
+  width: calc(100% + 0.875rem);
+  top: -0.4375rem;
+  left: -0.4375rem;
+}
+
+.img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.titleContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  user-select: none;
+}
+
+.titleWrapper {
+  color: var(--rbr-text);
+  font-family: 'Bull-VF', Helvetica, sans-serif;
+  font-size: 2.6125rem;
+  font-weight: 700;
+  line-height: 2.8125rem;
+  text-transform: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.descriptionContent {
+  display: block;
+  padding-top: 1rem;
+  cursor: pointer;
+}
+
+.description {
+  color: var(--rbr-text);
+  font-family: 'Bull-VF', Helvetica, sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.furtherInfoWrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 2.75rem;
+}
+
+.furtherInfoContent {
+  display: flex;
+  align-items: center;
+}
+
+.buttonItem {
+  background: var(--rbr-blue);
+  border-color: var(--rbr-blue);
+  max-width: 100%;
+  width: 7.0406rem;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.35, 0, 0, 1);
+}
+
+.buttonItem:hover {
+  background-color: #FFFFFF1A;
+  border-color: transparent;
+}
+
+.buttonLabel {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.categoryContainer {
+  display: flex;
+  white-space: nowrap;
+  margin-left: 1.75rem;
+}
+
+.category {
+  color: #FFFFFF99;
+  font-family: 'Bull-VF', Helvetica, sans-serif;
+  line-height: 1.125rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
