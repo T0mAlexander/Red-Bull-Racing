@@ -31,7 +31,7 @@
 }
 
 .layoutBackground {
-  background-image: url('https://res.cloudinary.com/tommello/image/upload/v1668524491/Projeto%20Red%20Bull%20Racing/cars-bg_rfhexw_sogom2.png');
+  background-image: url('https://res.cloudinary.com/tommello/image/upload/v1675510864/Projeto%20Red%20Bull%20Racing/3d_cars_background_vegaxr.png');
   background-size: auto;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -148,25 +148,6 @@
 }
 
 .glideSlide {
-  height: 100%;
-}
-
-.glideContainer {
-  max-width: 100%;
-}
-
-.glideContent {
-  min-height: 45rem;
-}
-
-.theCar {
-  position: absolute;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  transform: translate(-0.625rem, -0.125rem);
-  top: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 1;
+  max-height: 55rem;
+  max-width: 40rem;
 }
