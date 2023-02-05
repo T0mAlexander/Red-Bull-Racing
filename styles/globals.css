@@ -11,6 +11,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  width: 100%;
+}
+
 @font-face {
   font-family: 'BullText-Regular';
   src: url('https://res.cloudinary.com/tommello/raw/upload/v1672556545/Projeto%20Red%20Bull%20Racing/Fonts/BullText-Regular_uhe67s.woff2');
@@ -41,9 +45,63 @@
   src: url('https://res.cloudinary.com/tommello/raw/upload/v1672652727/Projeto%20Red%20Bull%20Racing/Fonts/BullVAR_vmvdhi.woff2');
 }
 
-a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset,
-form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp,
-small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
+a,
+abbr,
+acronym,
+address,
+applet,
+big,
+blockquote,
+body,
+caption,
+cite,
+code,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+small,
+span,
+strike,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+tt,
+ul,
+var {
   border: 0;
   font-family: inherit;
   font-size: 100%;
@@ -55,9 +113,12 @@ small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, t
   vertical-align: initial;
 }
 
-a, a:active, a:hover, a:visited {
-	color: inherit;
-	text-decoration: none;
+a,
+a:active,
+a:hover,
+a:visited {
+  color: inherit;
+  text-decoration: none;
 }
 
 .button {
@@ -172,7 +233,10 @@ div button.glide__bullet--active {
   line-height: 1.25rem;
 }
 
-button, input[type="button"], input[type="reset"], input[type="submit"] {
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   background: none;
   border: 0;
   border-radius: 0;
@@ -184,4 +248,39 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   outline: none;
   padding: 0;
   user-select: none;
+}
+
+@media (min-width: 1000px) {
+  .has-3dcar {
+    top: -3.125rem;
+  }
+}
+
+@media (min-width: 650px) {
+  .has-3dcar {
+    top: -6.875rem;
+  }
+}
+
+.cars__slides {
+  height: 42.1875rem !important;
+}
+
+.car3D {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  place-content: center;
+  place-items: center;
+  margin: auto;
+}
+
+@media (max-width: 525px) {
+  .car3D {
+    max-width: 100%;
+    max-height: calc(100% - 275px);
+  }
 }
