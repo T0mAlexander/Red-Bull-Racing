@@ -1,19 +1,32 @@
 import '@google/model-viewer'
 
 const RB16B = () => {
+  const Car3DView = {
+    height: '100%',
+    width: '100%',
+    outline: 'none',
+    opacity: 1,
+    visibility: 'visible'
+  }
+
   return (
     <model-viewer
-      class='cars__slide'
-      src='https://hoottyll.sirv.com/3D%20Cars/RB16B.glb'
+      style={Car3DView}
+      class='car3D'
+      src='https://hoottyll.sirv.com/3D%20Cars/Red%20Bull%20RB15.glb'
       alt='RB16B'
       ar
-      ar-status='not-presenting'
-      quick
-      auto-rotate
+      disable-pan
       ar-modes='scene-viewer quick-look'
+      ar-scale='auto'
+      quick-look-browsers='safari chrome'
+      preload
+      autoplay
+      auto-rotate
+      auto-rotate-delay='3000'
       camera-controls
       background-color='transparent'
-      auto-rotate-delay='3000'
+      poster=''
       camera-target='auto auto auto'
       camera-orbit='34deg 74deg auto'
       min-camera-orbit='auto 74deg 28deg'
@@ -25,9 +38,8 @@ const RB16B = () => {
       shadow-softness='1'
       stage-light-intensity='3'
       environment-intensity='3'
-      disable-zoom='true'
-      touch-action='pan-y'
-      magic-leap>
+      disable-zoom
+      ar-status='not-presenting'>
     </model-viewer>
   )
 }
