@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import style from '../styles/Home.module.css'
-import Nav from '../components/Home/Nav'
-import Carousel from '../components/Home/Carousel'
-import HighlightedNews from '../components/Home/HighlightedNews/HighlightedNews'
-import EditorsPick from '../components/Home/EditorsPick/EditorsPick'
-import Newsletter from '../components/Home/Newsletter/Newsletter'
-import Drivers from '../components/Home/Drivers/Drivers'
-import Cars from '../components/Home/Cars/Cars'
+import Nav from './components/Home/Nav'
+import Carousel from './components/Home/Carousel'
+import HighlightedNews from './components/Home/HighlightedNews/HighlightedNews'
+import EditorsPick from './components/Home/EditorsPick/EditorsPick'
+import Newsletter from './components/Home/Newsletter/Newsletter'
+import Drivers from './components/Home/Drivers/Drivers'
+import Cars from './components/Home/Cars/Cars'
 
 export default function Home() {
   return (

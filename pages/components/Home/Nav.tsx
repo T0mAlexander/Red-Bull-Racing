@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { List } from 'phosphor-react'
-import style from '../../styles/Home.module.css'
+import style from '../../../styles/Home.module.css'
 
 const Nav = () => {
   return (
