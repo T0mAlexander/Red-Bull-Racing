@@ -1,0 +1,9 @@
+query getCars($id: ID = "") {
+  car(where: {id: $id}) {
+    name
+    render3D
+    url
+    driversChampion
+    constructorsChampion
+  }
+}
