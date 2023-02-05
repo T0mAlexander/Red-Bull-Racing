@@ -5,10 +5,14 @@ import Glide from '@glidejs/glide'
 import '@glidejs/glide/dist/css/glide.core.min.css'
 import '@glidejs/glide/dist/css/glide.theme.min.css'
 import CarSlide from './CarSlide/CarSlide'
-import { useEffect } from 'react'
+import { useEffect } from 'react';
 import dynamic from 'next/dynamic'
 
 const Cars = () => {
+  const RB15 = dynamic(() => import('./3D/RB15/RB15'), { ssr: false })
+  const RB16B = dynamic(() => import('./3D/RB16B/RB16B'), { ssr: false })
+  const RB18 = dynamic(() => import('./3D/RB18/RB18'), { ssr: false })
+
   useEffect(() => {
     const carsCarousel = new Glide('.cars', {
       type: 'slider',
@@ -19,12 +23,12 @@ const Cars = () => {
     })
 
     carsCarousel.mount()
-  })
+  }, [])
 
-  const RB15 = dynamic(() => import('./3D/RB15/RB15'), {ssr: false})
-  const RB16B = dynamic(() => import('./3D/RB16B/RB16B'), {ssr: false})
-  const RB18 = dynamic(() => import('./3D/RB18/RB18'), {ssr: false})
-  
+  const disableContextMenu = (event: React.MouseEvent<HTMLDivElement>) => {
+    event.preventDefault()
+  }
+
   return (
     <div className={`cars ${style.wrapper}`}>
       <div className={style.Slider}>
@@ -82,15 +86,13 @@ const Cars = () => {
                 </h1>
               </div>
               <div className={style.carsSliderContent}>
-                <div className={style.carsSlider}>
-
+                <div className={style.carsSlider} onContextMenu={disableContextMenu}>
                   <div className='cars__track' data-glide-el='track'>
-                    <div className='cars__slides'>
-                      {/* <CarSlide carName='RB18' imageSource='https://res.cloudinary.com/tommello/image/upload/v1668524527/Projeto%20Red%20Bull%20Racing/rb18_tbkdec_byjdng.avif' /> */}
-                      <RB18 />
-                      <RB16B />
-                      <RB15 />
-                    </div>
+                    <ul className='cars__slides'>
+                      <li className={`cars__slide ${style.glideSlide}`}>
+                        <RB18 />
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
